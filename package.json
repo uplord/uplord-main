@@ -1,0 +1,90 @@
+{
+  "name": "uplord-main",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^7.4.3",
+    "@capacitor/core": "^7.4.3",
+    "@capacitor/ios": "^7.4.3",
+    "formik": "^2.4.6",
+    "next": "^15.3.0",
+    "next-themes": "^0.4.3",
+    "nextjs-components": "^6.0.0-rc.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "react-responsive": "^10.0.1",
+    "react-transition-group": "^4.4.5",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "uplord-ui": "^0.1.13",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@ebay/nice-modal-react": "^1.2.13",
+    "@eslint/eslintrc": "^3",
+    "@hookform/resolvers": "^3.10.0",
+    "@svgr/webpack": "^8.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "clsx": "^2.1.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.4.3",
+    "lucide-react": "^0.474.0",
+    "prettier": "^3.4.2",
+    "sass": "^1.86.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.0",
+    "tsparticles": "^3.7.1",
+    "typescript": "^5",
+    "zod": "^3.24.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.json": "prettier --write",
+    "*.scss": [
+      "prettier --write",
+      "stylelint --fix"
+    ],
+    "*.html": "prettier --write"
+  },
+  "experimental": {
+    "legacyBrowsers": false
+  },
+  "browserslist": {
+    "production": [
+      "defaults",
+      "not IE 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "compilerOptions": {
+    "typeRoots": [
+      "./src/types",
+      "./node_modules/@types"
+    ]
+  }
+}
