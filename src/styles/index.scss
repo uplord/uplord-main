@@ -2,26 +2,22 @@
 @use './normalize';
 
 .light {
-  background: $color-light;
-  color: $color-text;
+  background: var(--bg-color);
+  color: var(--body-color);
 }
 
 .dark {
-  background: $color-dark;
-  color: $color-text-dark;
+  background: var(--bg-dark-color);
+  color: var(--body-dark-color);
 }
 
 body {
-  color: $color-text;
+  color: var(--body-color);
   overflow-y: auto;
 
   @include dark-mode {
-    color: $color-text-dark;
+    color: var(--body-dark-color);
   }
-}
-
-.admin {
-  background: $color-dark;
 }
 
 .stop-scroll {
